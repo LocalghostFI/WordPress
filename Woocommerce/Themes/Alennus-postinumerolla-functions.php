@@ -1,3 +1,8 @@
+<?php
+
+// Alla oleva koodi lisätään Teeman / Theme functions.php tiedostoon.  Käytä avuksi Teeman tiedostoeditoria. 
+
+
 add_action( 'woocommerce_before_calculate_totals', 'lisaa_automaattinen_alennus' );
 function lisaa_automaattinen_alennus( $cart ) {
     if ( is_admin() && ! defined( 'DOING_AJAX' ) ) {
